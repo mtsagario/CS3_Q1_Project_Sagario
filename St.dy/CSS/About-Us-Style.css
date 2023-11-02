@@ -1,0 +1,165 @@
+<style>
+    /* Reset default styles */
+    body {
+        margin: 0;
+        padding: 0;
+        background: no-repeat center center/cover;
+        color: #333;
+    }
+
+    /* Common button styles */
+    button {
+        border: none;
+        border-radius: 0;
+        background: rgba(95, 191, 255, 0.475);
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        width: 200px;
+        cursor: pointer;
+        margin: 5px;
+        transition: all 0.5s;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    button:hover span {
+        padding-right: 25px;
+    }
+
+    button:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+    /* Header styles */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.45);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header img {
+        margin-left: 50px;
+        margin-top: 10px;
+        height: 120px;
+        width: auto;
+    }
+
+    header a {
+        margin-right: 50px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    /* Section 1 styles */
+    .section1 {
+        text-align: justify;
+        margin-top: 100px;
+        margin-left: 50px;
+        color: #fff;
+        padding: 40px;
+        width: calc(100% - 100px);
+        float: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .section1 h1 {
+        font-size: 36px;
+        text-shadow: 2px 2px 20px rgb(203, 82, 255);
+    }
+
+    .section1 h2, .section1 h3 {
+        text-shadow: 2px 2px 20px rgb(203, 82, 255);
+    }
+
+    .section1 h3 {
+        font-size: 22px;
+        color: rgb(159, 63, 204);
+    }
+
+    .section1 p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .section1 img {
+        float: right;
+        height: auto;
+        width: 510px;
+        border: 1px solid #fff;
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-right: 100px;
+    }
+
+    /* Section 2 styles */
+    .section2 {
+        position: relative;
+        padding: 10px;
+        background: rgba(255, 255, 255, 0.45);
+        color: #fff;
+        clear: both;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .section2 h2 {
+        text-align: center;
+        text-shadow: 2px 2px 20px rgb(203, 82, 255);
+    }
+
+    .section2 .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 100px;
+        text-shadow: 2px 2px 25px rgb(60, 60, 60);
+    }
+
+    .contact-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .contact-item a {
+        text-decoration: none;
+        color: #fff;
+        transition: font-size 0.2s; /* Add transition for smooth animation */
+    }
+    
+    .contact-item a:hover {
+        font-size: 120%; /* Increase size on hover */
+    }
+
+    .contact-item img {
+        float: left;
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    .copyright {
+        margin-left: 50px;
+        color: #fff;
+    }
+</style>
